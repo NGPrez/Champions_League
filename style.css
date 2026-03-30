@@ -41,8 +41,3 @@ th {
     font-weight: bold;
     text-transform: uppercase;
 }
-
-/* Ефект "зебри" - парні рядки трохи сірі для зручності читання */
-tr:nth-child(even) {
-    background-color: #f8f9fa;
-}
