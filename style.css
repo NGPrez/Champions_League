@@ -10,8 +10,7 @@ body {
 .table-container {
     background-color: #ffffff;
     padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Легка тінь для об'єму */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Легка тінь для об'єму залишилася */
     width: 100%;
     max-width: 800px;
 }
@@ -45,4 +44,10 @@ th {
 /* Ефект "зебри" - парні рядки трохи сірі для зручності читання */
 tr:nth-child(even) {
     background-color: #f8f9fa;
+}
+
+/* Легке підсвічування рядка, коли наводиш мишкою */
+tr:hover {
+    background-color: #e2e8f0;
+    transition: background-color 0.3s;
 }
