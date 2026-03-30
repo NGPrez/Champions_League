@@ -1,7 +1,6 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f4f8;
-    color: #333;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #e9ecef; /* Світло-сірий фон сторінки */
     display: flex;
     justify-content: center;
     padding: 40px 20px;
@@ -9,60 +8,47 @@ body {
 }
 
 .table-container {
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
+    border-radius: 10px; /* Заокруглені кути, як у попередніх завданнях */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Легка тінь для об'єму */
     width: 100%;
+    max-width: 800px;
 }
 
 h1 {
     text-align: center;
-    color: #2c3e50;
-    margin-bottom: 25px;
+    color: #0b3661; /* Темно-синій колір Ліги Чемпіонів */
+    margin-bottom: 20px;
     font-size: 24px;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    margin: 0 auto;
+    font-size: 15px;
 }
 
 th, td {
-    padding: 15px;
+    padding: 12px 15px;
     text-align: center;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #dddddd; /* Акуратна лінія між рядками */
 }
 
 th {
-    background-color: #27ae60; /* Футбольний зелений */
-    color: white;
-    font-weight: 600;
+    background-color: #0b3661; /* Синя шапка таблиці */
+    color: #ffffff;
+    font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 1px;
 }
 
-/* Заокруглення кутів для шапки таблиці */
-th:first-child {
-    border-top-left-radius: 8px;
-}
-th:last-child {
-    border-top-right-radius: 8px;
-}
-
-/* Чередування кольорів рядків для зручності читання */
+/* Ефект "зебри" - парні рядки трохи сірі для зручності читання */
 tr:nth-child(even) {
-    background-color: #f9f9f9;
+    background-color: #f8f9fa;
 }
 
-/* Ефект при наведенні мишкою */
+/* Легке підсвічування рядка, коли наводиш мишкою */
 tr:hover {
-    background-color: #e8f5e9;
-    transition: background-color 0.3s ease;
-}
-
-td {
-    font-size: 15px;
+    background-color: #e2e8f0;
+    transition: background-color 0.3s;
 }
